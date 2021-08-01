@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.header-links {
+  display: inline-flex;
+  grid-column-gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.header-links > a {
+  text-decoration: none;
+}
+
+.mymodal {
+	position: absolute;
+	background: white;
+	width: 667px;
+	max-height: 667px;
+	left: calc(50% - 667px/2 + 0.5px);
+	top: 146px;
+	overflow-y: auto;
+	mix-blend-mode: normal;
+	/* Shadow_medium */
+	filter: drop-shadow(0px 16px 32px rgba(45, 62, 86, 0.04));
+	padding: 42px;
+	border-radius: 4px;
+}
+
+.myoverlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background:rgba(196, 196, 196, 0.67);
+}

@@ -1,3 +1,5 @@
+# https://github.com/MichalZalecki/docker-compose-node
+# https://michalzalecki.com/docker-compose-node/
 FROM node:16.1.0-buster AS builder
 
 WORKDIR /app
@@ -13,6 +15,11 @@ RUN yarn install --frozen-lockfile
 #RUN npm ci
 
 COPY . .
+
+# RUN npm install axios --save
+# RUN npm install react-modal --save
+# RUN npm install react-router-dom --save
+#RUN npm install uuid
 
 RUN npm run build
 
